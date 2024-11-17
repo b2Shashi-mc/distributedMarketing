@@ -4,7 +4,7 @@ function consentSubmit(e){
     e.preventDefault();
     var formData=new FormData(document.getElementById('data-extension-form'));
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://mcs9w798j62y0yjmcfb0tt78793m.pub.sfmc-content.com/jqyqiztafgv', true);
+    xhr.open('POST', 'https://cloud.domain/distributedMarketing', true);
     xhr.onload = () => {
       if (xhr.readyState === xhr.DONE) {
         if (xhr.status === 200) {
