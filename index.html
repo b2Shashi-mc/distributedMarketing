@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Distributed Marketing Data Extension
+    </title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/lightning-design-system/2.14.4/styles/salesforce-lightning-design-system.min.css">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="distributedmarketing.css">
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg"
+           alt="Salesforce Logo">
+      <h2 class="title">Create Distributed Marketing Data Extension
+      </h2>
+      <form id="data-extension-form" action="%%=RequestParameter('PAGEURL')=%%" method="post">
+        <div class="form-group">
+          <label for="dataExtensionName">Data Extension Name</label>
+          <input type="text" id="dataExtensionName" name="dataExtensionName" required>
+        </div>
+        <div class="form-group">
+          <label for="folderName">Folder Name</label>
+          <input type="text" id="folderName" name="folderName" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Create Data Extension">
+        </div>
+      </form>
+      <div class="success-message" id="success-message">
+        Data Extension created successfully!
+      </div>
+    </div>
+     <!-- Link to external JS -->
+     <script src="distributedmarketing.js"></script>
+  </body>
+</html>
+             
