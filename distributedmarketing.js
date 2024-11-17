@@ -4,7 +4,7 @@ function consentSubmit(e){
     e.preventDefault();
     var formData=new FormData(document.getElementById('data-extension-form'));
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'distributedMarketing.json', true);
+    xhr.open('POST', 'coderesourceDistributedmarketing.js', true);
     xhr.onload = () => {
       if (xhr.readyState === xhr.DONE) {
         if (xhr.status === 200) {
